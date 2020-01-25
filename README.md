@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/oznu/docker-cloudflare-ddns.svg)](https://travis-ci.org/oznu/docker-cloudflare-ddns) [![Docker Pulls](https://img.shields.io/docker/pulls/oznu/cloudflare-ddns.svg)](https://hub.docker.com/r/oznu/cloudflare-ddns/)
+[![Travis](https://img.shields.io/travis/valentinvieriu/docker-cloudflare-ddns.svg)](https://travis-ci.org/valentinvieriu/docker-cloudflare-ddns) [![Docker Pulls](https://img.shields.io/docker/pulls/valentinvieriu/cloudflare-ddns.svg)](https://hub.docker.com/r/valentinvieriu/cloudflare-ddns/)
 
 # Docker CloudFlare DDNS
 
@@ -10,9 +10,9 @@ This is a multi-arch image and will run on amd64, aarch64, and armhf devices, in
 
 | Image Tag      | Architecture  | OS            | Size   |
 | :------------- | :-------------| :------------ | :----  |
-| latest         | x64           | Alpine Linux  | [![](https://images.microbadger.com/badges/image/oznu/cloudflare-ddns.svg)](https://microbadger.com/images/oznu/cloudflare-ddns) |
-| armhf          | arm32v6       | Alpine Linux  | [![](https://images.microbadger.com/badges/image/oznu/cloudflare-ddns:armhf.svg)](https://microbadger.com/images/oznu/cloudflare-ddns:armhf) |
-| aarch64        | arm64         | Alpine Linux  | [![](https://images.microbadger.com/badges/image/oznu/cloudflare-ddns:aarch64.svg)](https://microbadger.com/images/oznu/cloudflare-ddns:aarch64) |
+| latest         | x64           | Alpine Linux  | [![](https://images.microbadger.com/badges/image/valentinvieriu/cloudflare-ddns.svg)](https://microbadger.com/images/valentinvieriu/cloudflare-ddns) |
+| armhf          | arm32v6       | Alpine Linux  | [![](https://images.microbadger.com/badges/image/valentinvieriu/cloudflare-ddns:armhf.svg)](https://microbadger.com/images/valentinvieriu/cloudflare-ddns:armhf) |
+| aarch64        | arm64         | Alpine Linux  | [![](https://images.microbadger.com/badges/image/valentinvieriu/cloudflare-ddns:aarch64.svg)](https://microbadger.com/images/valentinvieriu/cloudflare-ddns:aarch64) |
 
 ## Usage
 
@@ -23,7 +23,7 @@ docker run \
   -e API_KEY=xxxxxxx \
   -e ZONE=example.com \
   -e SUBDOMAIN=subdomain \
-  oznu/cloudflare-ddns
+  valentinvieriu/cloudflare-ddns
 ```
 
 ## Parameters
@@ -71,7 +71,7 @@ If you prefer to use [Docker Compose](https://docs.docker.com/compose/):
 version: '2'
 services:
   cloudflare-ddns:
-    image: oznu/cloudflare-ddns:latest
+    image: valentinvieriu/cloudflare-ddns:latest
     restart: always
     environment:
       - API_KEY=xxxxxxx
