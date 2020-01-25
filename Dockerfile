@@ -1,5 +1,5 @@
 ARG S6_ARCH
-FROM valentinvieriu/s6-alpine:3.11-${S6_ARCH:-amd64}
+FROM valentinvieriu/s6-alpine:3.11.1-${S6_ARCH:-amd64}
 
 RUN apk add --no-cache jq curl bind-tools
 
